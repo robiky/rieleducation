@@ -1,0 +1,104 @@
+
+
+#regForm {
+  background-color: #ffffff;
+
+
+
+}
+
+h1 {
+  text-align: center;
+}
+
+
+input.invalid {
+  background-color: transparent;
+}
+
+.tab {
+  display: none;
+}
+
+.five-step__button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+.five-step__button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* date of Birth */
+
+.left,
+.right {
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3em;
+  text-align: center;
+  position: absolute;
+  background: #2F558E;
+  padding: 7px 10px;
+  color: #fff;
+}
+
+.left {
+  left: -60%;
+  top: 18px;
+  width: 200px;
+}
+
+.right {
+  left: 105%;
+  top: 25px;
+  width: 160px;
+}
+
+.left:after,
+.right:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 8px;
+  margin-top: -8px;
+}
+
+.right:after {
+  right: 100%;
+  border-right-color: #2F558E;
+}
+
+.left:after {
+  left: 100%;
+  border-left-color: #2F558E;
+}

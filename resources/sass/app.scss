@@ -1,0 +1,91 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+//colors
+$seashell: #f1f1f1;
+$white: #ffffff;
+$color_silver_chalice_approx: #aaaaaa;
+$color_pippin_approx: #ffdddd;
+$color_apple_approx: #4caf50;
+$color_pink_swan_approx: #bbbbbb;
+
+//fonts
+$font_0: Raleway;
+
+* {
+  //Instead of the line below you could use @include box-sizing($bs)
+  box-sizing: border-box;
+}
+body {
+  background-color: $seashell;
+}
+#regForm {
+  background-color: $white;
+  margin: 100px auto;
+  font-family: $font_0;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+h1 {
+  text-align: center;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: $font_0;
+  border: 1px solid $color_silver_chalice_approx;
+  &.invalid {
+    background-color: $color_pippin_approx;
+  }
+}
+.tab {
+  display: none;
+}
+.five-step__button {
+  background-color: $color_apple_approx;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: $font_0;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+#prevBtn {
+  background-color: $color_pink_swan_approx;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $color_pink_swan_approx;
+  border: none;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  &.active {
+    opacity: 1;
+  }
+}
+/* date of Birth */
+#regForm {
+  input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+}
